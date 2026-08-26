@@ -6,40 +6,67 @@
 
 # 1. Calcula el area de un rectangulo con base 5 y altura 3.
 #    Guarda el resultado en una variable e imprimila.
+'''
+base = 5
+altura = 3
 
+area_rectangulo = base * altura
+print("El area del rectangulo es:", area_rectangulo)
 
 # 2. Convierte una temperatura de Celsius a Fahrenheit.
 #    Pide al usuario que ingrese la temperatura en Celsius,
 #    aplica la formula (C * 9/5) + 32 e imprime el resultado.
 
+input_celsius = float(input("Ingrese la temperatura en Celsius: "))
+fahrenheit = (input_celsius * 9/5) + 32
+print(f"{input_celsius} grados Celsius son {fahrenheit} grados Fahrenheit.")
 
 # 3. Pide al usuario su nombre y su edad. Concatenalos en un solo string
 #    con un formato como "Me llamo Ana y tengo 20 anios."
 #    Luego imprime el texto y su tipo de dato con type().
 
+nombre = input("Ingrese su nombre: ")
+edad = int(input("Ingrese su edad: "))
+mensaje = print(f"Me llamo {nombre} y mi edad es {edad}.")
 
 # 4. Calcula el area de un circulo con radio 4.
 #    Usa 3.14159 como valor de PI. Guarda el resultado e imprimilo.
 
+area_circulo = 3.14159 * (4 ** 2)
+print("El area del circulo es:", area_circulo)
 
 # 5. Pide al usuario que ingrese dos numeros enteros.
 #    Muestra la suma, resta, multiplicacion y division de esos numeros,
 #    cada operacion en una linea separada con una etiqueta clara.
+numero1 = int(input("Ingrese el primer numero entero: "))
+numero2 = int(input("Ingrese el segundo numero entero: "))
+
+print("Suma:", numero1 + numero2)
+print("Resta:", numero1 - numero2)
+print("Multiplicacion:", numero1 * numero2)
+if numero2 != 0:
+    print("Division:", numero1 / numero2)
+else:
+    print("Division: No se puede dividir por cero")
 
 
 # 6. Realiza la siguiente operacion: (15 + 5) * 3 - 10 / 2
 #    Guarda el resultado en una variable e imprime tanto el resultado
 #    como su tipo de dato usando type().
-
+resultado = (15 + 5) * 3 - 10 / 2
+print(f"El resultado es {resultado} y el tipo es {type(resultado).__name__}")
 
 # 7. Crea una variable booleana llamada "aprobo" que represente si un alumno
 #    aprobo un examen. Asignale el valor True o False segun tu criterio
 #    e imprime un mensaje claro indicando el estado del alumno.
-
-
+aprobo = type(bool)
+if True:
+    print(f"El alumno aprobo")  
+'''
 # 8. Calcula el perimetro de un triangulo equilatero con lados de longitud 6.
 #    Guarda el resultado en una variable e imprimila con una etiqueta descriptiva.
-
+triangulo_equilatero = 3 * 6
+print(f"El perimetro del triangulo es {triangulo_equilatero}")
 
 # 9. Pide al usuario que ingrese su nombre, edad y ciudad de residencia.
 #    Imprime cada dato en una linea separada junto con su tipo de dato usando type().
